@@ -17,7 +17,7 @@ jobs:
 
         steps:
             - name: Use repository source
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Use node.js
               uses: actions/setup-node@v3
@@ -61,7 +61,7 @@ jobs:
                   REACT_APP_FB_MEASUREMENT_ID: ${{ secrets.REACT_APP_FB_MEASUREMENT_ID }}
 
             - name: Deploy to gh-pages branch
-              uses: peaceiris/actions-gh-pages@v4
+              uses: peaceiris/actions-gh-pages@v3
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./build
