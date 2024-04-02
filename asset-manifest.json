@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/weniv_photo_booth/static/js/main.a44e2ef5.js",
+    "main.js": "/weniv_photo_booth/static/js/main.ebf98a84.js",
     "index.html": "/weniv_photo_booth/index.html",
-    "main.a44e2ef5.js.map": "/weniv_photo_booth/static/js/main.a44e2ef5.js.map"
+    "main.ebf98a84.js.map": "/weniv_photo_booth/static/js/main.ebf98a84.js.map"
   },
   "entrypoints": [
-    "static/js/main.a44e2ef5.js"
+    "static/js/main.ebf98a84.js"
   ]
 }
