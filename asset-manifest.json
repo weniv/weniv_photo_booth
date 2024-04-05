@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.js": "/weniv_photo_booth/static/js/main.828e79ac.js",
+    "main.js": "/weniv_photo_booth/static/js/main.e5d7f589.js",
+    "static/media/Type3.svg": "/weniv_photo_booth/static/media/Type3.e70c75c71b6039f9f8ec86344b9b5e12.svg",
+    "static/media/Type2.svg": "/weniv_photo_booth/static/media/Type2.63cd23540eaa9e188d132e31d3640ca0.svg",
+    "static/media/Type4.svg": "/weniv_photo_booth/static/media/Type4.e6b973285a67de10e44925e200b29fcf.svg",
+    "static/media/Type1.svg": "/weniv_photo_booth/static/media/Type1.c32fc72693b1c57e529b913e81b5ba08.svg",
     "static/media/logo.svg": "/weniv_photo_booth/static/media/logo.3003e7a20fab5049824e13af8bf70ee9.svg",
     "static/media/title-bg.svg": "/weniv_photo_booth/static/media/title-bg.41905a77481b46099ae0738697361a29.svg",
     "static/media/title.svg": "/weniv_photo_booth/static/media/title.4d9cf9262ce0c1a94f48c7fec2830eb0.svg",
     "index.html": "/weniv_photo_booth/index.html",
-    "main.828e79ac.js.map": "/weniv_photo_booth/static/js/main.828e79ac.js.map"
+    "main.e5d7f589.js.map": "/weniv_photo_booth/static/js/main.e5d7f589.js.map"
   },
   "entrypoints": [
-    "static/js/main.828e79ac.js"
+    "static/js/main.e5d7f589.js"
   ]
 }
