@@ -76,15 +76,6 @@ const Main = styled.main`
     .start-button {
         width: 9.5rem;
         height: 3.75rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: var(--main-color);
-        color: var(--bg-color);
-        font-family: DungGeunMo;
-        font-size: 2.25rem;
-        border: none;
-        border-radius: 0.4375rem;
         margin: 4.8rem 0 2.1rem;
     }
 

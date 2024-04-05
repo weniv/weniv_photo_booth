@@ -35,6 +35,18 @@ const GlobalStyles = createGlobalStyle`
         background: #160E26;
     }
 
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--main-color);
+        color: var(--bg-color);
+        font-family: DungGeunMo;
+        font-size: 2.25rem;
+        border: none;
+        border-radius: 0.4375rem;
+    }
+
     .ir {
         position: absolute;
         clip: rect(0 0 0 0);
