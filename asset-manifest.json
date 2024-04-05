@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/weniv_photo_booth/static/js/main.ebf98a84.js",
+    "main.js": "/weniv_photo_booth/static/js/main.828e79ac.js",
+    "static/media/logo.svg": "/weniv_photo_booth/static/media/logo.3003e7a20fab5049824e13af8bf70ee9.svg",
+    "static/media/title-bg.svg": "/weniv_photo_booth/static/media/title-bg.41905a77481b46099ae0738697361a29.svg",
+    "static/media/title.svg": "/weniv_photo_booth/static/media/title.4d9cf9262ce0c1a94f48c7fec2830eb0.svg",
     "index.html": "/weniv_photo_booth/index.html",
-    "main.ebf98a84.js.map": "/weniv_photo_booth/static/js/main.ebf98a84.js.map"
+    "main.828e79ac.js.map": "/weniv_photo_booth/static/js/main.828e79ac.js.map"
   },
   "entrypoints": [
-    "static/js/main.ebf98a84.js"
+    "static/js/main.828e79ac.js"
   ]
 }
