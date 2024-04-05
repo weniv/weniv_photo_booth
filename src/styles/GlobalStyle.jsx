@@ -17,13 +17,13 @@ const GlobalStyles = createGlobalStyle`
 }
     ${reset}
 
-    // :root {
-    //     --main-color: #6DF2CC;
-    //     --bg-color: #160E26;
-    //     --white-color: #FFFFFF;
-    //     --gray-lv2-color: #595F66;
-    //     --gray-lv3-color: #8D9299;
-    // }
+    :root {
+        --main-color: #6DF2CC;
+        --bg-color: #160E26;
+        --white-color: #FFFFFF;
+        --gray-lv2-color: #595F66;
+        --gray-lv3-color: #8D9299;
+    }
 
     * {
         box-sizing: border-box;
@@ -33,6 +33,15 @@ const GlobalStyles = createGlobalStyle`
         font-family: Pretendard;
         overflow: hidden;
         background: #160E26;
+    }
+
+    .ir {
+        position: absolute;
+        clip: rect(0 0 0 0);
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
     }
 `;
 
