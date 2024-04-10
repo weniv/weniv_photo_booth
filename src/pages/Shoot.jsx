@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import sound from "../assets/camera.wav";
 
-export default function Shoot({ setImage, setVideo }) {
+export default function Shoot({ setImage, setVideo, setVideoUrl }) {
     const navigate = useNavigate();
     const [isReady, setIsReady] = useState(false);
+    const [isDone, setIsDone] = useState(false);
     const [time, setTime] = useState(10);
     const [pictures, setPictures] = useState([]);
     const audio = new Audio(sound);
@@ -53,10 +54,10 @@ export default function Shoot({ setImage, setVideo }) {
         } else if (pictures.length === 4) {
             handleStopRecording();
             clearInterval(sec);
-            setTimeout(() => {
-                // 테스트하는 동안 filter페이지로 이동 off
-                setVideoUrl();
-            }, 1300);
+            setIsDone(true);
+            // setTimeout(() => {
+            //     getVideoUrl();
+            // }, 1300);
         }
     };
 
@@ -113,13 +114,14 @@ export default function Shoot({ setImage, setVideo }) {
         }
     };
 
-    const setVideoUrl = () => {
+    const getVideoUrl = () => {
         const videoBlob = new Blob(recordedBlobs, { type: "video/webm" });
-
+        const videoUrl = URL.createObjectURL(videoBlob);
         setVideo(videoBlob);
+        setVideoUrl(videoUrl);
 
         setTimeout(() => {
-            navigate("/filter");
+            navigate("/result");
         }, 1500);
     };
 
@@ -158,6 +160,8 @@ export default function Shoot({ setImage, setVideo }) {
                     <video autoPlay muted ref={videoRef}></video>
                     <canvas ref={canvasRef} style={{ display: "none" }}></canvas>
                 </VideoCont>
+
+                {isDone && <NextBtn onClick={getVideoUrl}> NEXT</NextBtn>}
             </Layout>
         </>
     );
@@ -208,4 +212,11 @@ const VideoCont = styled.div`
         -webkit-transform: rotateY(180deg); /* Safari and Chrome */
         -moz-transform: rotateY(180deg);
     }
+`;
+
+const NextBtn = styled.button`
+    position: fixed;
+    right: 7.19rem;
+    bottom: 4.06rem;
+    padding: 0.625rem 2rem;
 `;
