@@ -14,7 +14,7 @@ function App() {
                 <Route path="/" element={<Start />} />
                 <Route path="/frame" element={<SelectFrame />} />
                 <Route path="/shoot" element={<Shoot setImage={setImage} setVideo={setVideo} />} />
-                <Route path="/filter" element={<SelectFilter />} />
+                <Route path="/filter" element={<SelectFilter image={image} video={video} />} />
                 <Route path="/result" element={<ScanQr />} />
                 <Route path="/download/:imgUrl/*" element={<DownloadResult />} />
                 <Route path="/*" element={<Start />} />
