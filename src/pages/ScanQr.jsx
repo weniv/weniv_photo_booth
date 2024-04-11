@@ -127,6 +127,7 @@ export default function ScanQr({ image, video, videoUrl }) {
         }
     }, []);
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         setIsQr(false);
 
@@ -136,7 +137,7 @@ export default function ScanQr({ image, video, videoUrl }) {
                 imageCaptureHandler();
             }, 1000);
         }
-    }, [imagesLoaded, imageCaptureHandler]);
+    }, [imagesLoaded]);
 
     useEffect(() => {
         if (imgUrl.length > 1) {

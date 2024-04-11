@@ -124,6 +124,7 @@ export default function Shoot({ setImage, setVideo, setVideoUrl }) {
         }, 1500);
     };
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         // 촬영페이지로 이동 후 5초 뒤 촬영 시작
         if (isReady) {
@@ -134,7 +135,7 @@ export default function Shoot({ setImage, setVideo, setVideoUrl }) {
                 handleStartRecording();
             }
         }
-    }, [time, isReady, stream, handleStartRecording, timer]);
+    }, [time, isReady, stream]);
 
     // 다른 페이지로 이동시 카메라 사용 종료
     useEffect(() => {
