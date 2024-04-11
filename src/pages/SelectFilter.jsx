@@ -36,7 +36,7 @@ export default function SelectFilter({ image, video }) {
         }
 
         localStorage.setItem("filterType", "filter1");
-    }, [filterType]);
+    }, [frameType]);
 
     // useEffect(() => {
     //     if (videoRef.current) {

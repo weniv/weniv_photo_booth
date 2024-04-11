@@ -15,7 +15,6 @@ import Type4 from "../assets/Type4.png";
 import Arrow from "../assets/arrow.svg";
 
 export default function ScanQr({ image, video, videoUrl }) {
-    console.log(video);
     const frameType = localStorage.getItem("frameType");
     const navigate = useNavigate();
 
@@ -137,7 +136,7 @@ export default function ScanQr({ image, video, videoUrl }) {
                 imageCaptureHandler();
             }, 1000);
         }
-    }, [imagesLoaded, imageCaptureHandler]);
+    }, [imagesLoaded, imageCaptureHandler()]);
 
     useEffect(() => {
         if (imgUrl.length > 1) {
