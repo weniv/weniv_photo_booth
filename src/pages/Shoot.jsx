@@ -20,8 +20,7 @@ export default function Shoot({ setImage, setVideo, setVideoUrl }) {
     }, []);
 
     const takePhoto = () => {
-        // 테스트하는 동안 찰칵 소리 off
-        // audio.play();
+        audio.play();
 
         const width = 640;
         const height = 450;
@@ -135,7 +134,7 @@ export default function Shoot({ setImage, setVideo, setVideoUrl }) {
                 handleStartRecording();
             }
         }
-    }, [time, isReady, stream]);
+    }, [time, isReady, stream, handleStartRecording, timer]);
 
     // 다른 페이지로 이동시 카메라 사용 종료
     useEffect(() => {

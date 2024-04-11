@@ -46,7 +46,7 @@ export default function ScanQr({ image, video, videoUrl }) {
                 setCurrentFrame(null);
                 break;
         }
-    }, []);
+    }, [frameType]);
 
     const date = new Date();
     const createdDate = `${date.getFullYear()}${("0" + (date.getMonth() + 1)).slice(-2)}${("0" + date.getDate()).slice(-2)}`;
@@ -102,6 +102,8 @@ export default function ScanQr({ image, video, videoUrl }) {
 
     const handleUploadVideo = async (videoFile) => {
         const videoUrl = await uploadVideo(videoFile);
+
+        return videoUrl;
     };
 
     useEffect(() => {
@@ -135,7 +137,7 @@ export default function ScanQr({ image, video, videoUrl }) {
                 imageCaptureHandler();
             }, 1000);
         }
-    }, [imagesLoaded]);
+    }, [imagesLoaded, imageCaptureHandler]);
 
     useEffect(() => {
         if (imgUrl.length > 1) {

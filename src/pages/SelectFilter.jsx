@@ -9,7 +9,7 @@ import Type4 from "../assets/Type4.png";
 
 export default function SelectFilter({ image, video }) {
     const navigate = useNavigate();
-    const videoRef = useRef(null);
+    // const videoRef = useRef(null);
     const frameType = localStorage.getItem("frameType");
     const [currentFrame, serCurrentFrame] = useState(null);
     const [filterType, setFilterType] = useState(null);
@@ -36,7 +36,7 @@ export default function SelectFilter({ image, video }) {
         }
 
         localStorage.setItem("filterType", "filter1");
-    }, []);
+    }, [filterType]);
 
     // useEffect(() => {
     //     if (videoRef.current) {
@@ -140,6 +140,7 @@ export default function SelectFilter({ image, video }) {
 }
 
 const Wrap = styled.main`
+    width: 100vw;
     padding: 5.75rem 17.67rem 5.37rem 7.19rem;
     display: flex;
     gap: 12.85rem;
