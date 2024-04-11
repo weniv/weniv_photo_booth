@@ -136,7 +136,7 @@ export default function ScanQr({ image, video, videoUrl }) {
                 imageCaptureHandler();
             }, 1000);
         }
-    }, [imagesLoaded, imageCaptureHandler()]);
+    }, [imagesLoaded, imageCaptureHandler]);
 
     useEffect(() => {
         if (imgUrl.length > 1) {

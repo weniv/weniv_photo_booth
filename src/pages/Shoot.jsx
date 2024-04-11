@@ -134,7 +134,7 @@ export default function Shoot({ setImage, setVideo, setVideoUrl }) {
                 handleStartRecording();
             }
         }
-    }, [time, isReady, stream, handleStartRecording(), timer()]);
+    }, [time, isReady, stream, handleStartRecording, timer]);
 
     // 다른 페이지로 이동시 카메라 사용 종료
     useEffect(() => {
